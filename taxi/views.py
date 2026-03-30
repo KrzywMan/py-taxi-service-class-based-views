@@ -30,7 +30,6 @@ class CarListView(generic.ListView):
     queryset = Car.objects.select_related("manufacturer").order_by("model")
 
 
-
 class CarDetailView(generic.DetailView):
     model = Car
 
